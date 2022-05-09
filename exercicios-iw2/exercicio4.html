@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 4</title>
+</head>
+<body>
+    <script>
+        var a = Number(prompt('valor de A:'))
+        var b = Number(prompt('valor de B:'))
+        var c = Number(prompt('valor de C:'))
+        var delta = Math.pow(b, 2) - 4 * a * c
+        var x1 = (-1 * b + (Math.sqrt(delta))) / 2 * a
+        var x2 = (-1 * b - (Math.sqrt(delta))) / 2 * a
+        alert(`O valor de A é ${a} \nO valor de B é ${b} \nO valor de C é ${c} \nO valor de delta é ${delta} \nO valor das raízes é: x1 = ${x1}; x2 = ${x2}`)
+    </script>
+
+</body>
+
+</html>
