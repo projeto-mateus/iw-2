@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 02</title> 
+</head>
+
+<body>
+    <script>
+        var sal = Number(prompt('Digite seu salário: '))
+
+        if (sal < 280) {
+            var por = sal * 0.2
+            var total = sal + por
+
+            alert(`*Seu salario antigo era ${sal} \n*Foi aplicada um aumento de 20% \n*Aumento de R$${por} \n*Seu novo salario é R$${total}`)
+        }
+        else {
+            if ((sal >= 280) && (sal < 700)) {
+                var por = sal * 0.15
+                var total = sal + por
+
+                alert(`*Seu salario antigo era ${sal} \n*Foi aplicada um aumento de 15% \n*Aumento de R$${por} \n*Seu novo salario é R$${total}`)
+            }else {
+                if ((sal >= 700) && (sal < 1500)) {
+                    var por = sal * 0.10
+                    var total = sal + por
+
+                    alert(`*Seu salario antigo era ${sal} \n*Foi aplicada um aumento de 10% \n*Aumento de R$${por} \n*Seu novo salario é R$${total}`)
+                }else {
+                    if (sal >= 1500) {
+                        var por = sal * 0.05
+                        var total = sal + por
+
+                        alert(`*Seu salario antigo era ${sal} \n*Foi aplicada um aumento de 5% \n*Aumento de R$${por} \n*Seu novo salario é R$${total}`)
+                    }
+                }
+            }
+        }
+    </script>
+</body>
+
+</html>
